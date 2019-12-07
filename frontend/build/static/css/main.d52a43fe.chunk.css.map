@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom.css"],"names":[],"mappings":"AAAA,WACI,UACJ,CAEA,eACI,wBAA6B,CAC7B,UACJ,CAEA,iBACI,UACJ","file":"main.d52a43fe.chunk.css","sourcesContent":[".my-button {\n    color: gold\n}\n\n.my-reg-button {\n    background-color: greenyellow;\n    color: black\n}\n\n.my-text-opacity {\n    opacity: .4;\n}"]}

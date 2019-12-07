@@ -41,9 +41,9 @@ export default class Home extends React.Component {
                         <Col className="p-5">
                             <Jumbotron className="text-center">
                                 <h1 className="pb-3">Trip Tracker</h1>
-                                <h3 className="pb-3">Please login</h3>
-                                <Button onClick={this.handleLoginShow} className="m-3">Login</Button>
-                                <Button onClick={this.handleRegisterShow} className="m-3">Register</Button>
+                                <h3 className="pb-3 my-text-opacity">Please login</h3>
+                                <Button onClick={this.handleLoginShow} className="m-3 my-button">Login</Button>
+                                <Button onClick={this.handleRegisterShow} className="m-3 my-reg-button">Register</Button>
                             </Jumbotron>
                         </Col>
                     </Row>
