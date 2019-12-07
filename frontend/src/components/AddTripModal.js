@@ -67,7 +67,7 @@ export default class AddTripModal extends Component {
                     </Form.Group>
 
                     <Form.Group controlId="formAddTripDailyBudget">
-                        <Form.Label>How much are you budgeting per day?</Form.Label>
+                        <Form.Label>How much are you budgeting per day? (number only, no dollar sign</Form.Label>
                         <Form.Control type="text" placeholder="Enter daily budget (no dollar sign)" onChange={this.handleTripDailyBudgetChange} />
                     </Form.Group>
 
