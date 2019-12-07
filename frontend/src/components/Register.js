@@ -82,12 +82,12 @@ class Register extends React.Component {
     render() {
         return (
             <div>
-                <Modal show={this.props.show}>
+                <Modal show={this.props.show} onHide={this.props.handleClose}>
                     <h1>Register</h1>
                     <Form>
-                    <Form.Group controlId="formLoginEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="text" placeholder="Enter name3" onChange={this.handleNameChange}/>
+                    <Form.Group controlId="formLoginName">
+                            <Form.Label>Name</Form.Label>
+                            <Form.Control type="text" placeholder="Enter name" onChange={this.handleNameChange}/>
                         </Form.Group>
 
                         <Form.Group controlId="formLoginEmail">

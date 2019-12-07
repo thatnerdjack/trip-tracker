@@ -58,7 +58,7 @@ class Login extends React.Component {
     render() {
         return (
             <div>
-                <Modal show={this.props.show}>
+                <Modal show={this.props.show} onHide={this.props.handleClose}>
                     <h1>Login</h1>
                     <Form>
                         <Form.Group controlId="formLoginEmail">
