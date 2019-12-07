@@ -35,7 +35,7 @@ export default class AddExpenseModal extends Component {
             this.state.title)
         event.preventDefault();
 
-        axios.post("http://localhost:5000/api/trips/expense", {
+        axios.post("/api/trips/expense", {
             tripId: this.props.tripId,
             dayId: this.props.dayId,
             amount: this.state.amount,

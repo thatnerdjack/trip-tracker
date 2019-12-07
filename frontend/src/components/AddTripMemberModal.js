@@ -22,7 +22,7 @@ export default class AddTripMemberModal extends Component {
     async handleSubmit(event) {
         event.preventDefault();
 
-        axios.post("http://localhost:5000/api/trips/addmember", {
+        axios.post("/api/trips/addmember", {
             email: btoa(this.state.email),
             tripId: this.props.tripId
         })

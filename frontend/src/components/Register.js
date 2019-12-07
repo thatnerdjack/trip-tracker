@@ -48,14 +48,14 @@ class Register extends React.Component {
     async handleSubmit(event) {
         event.preventDefault();
 
-        axios.post("http://localhost:5000/api/users/register", {
+        axios.post("/api/users/register", {
             name: this.state.name,
             email: this.state.email,
             password: this.state.password,
             password2: this.state.confPass
         })
         .then(function(resA) {
-            axios.post("http://localhost:5000/api/users/login", {
+            axios.post("/api/users/login", {
                 email: this.state.email,
                 password: this.state.password
             })

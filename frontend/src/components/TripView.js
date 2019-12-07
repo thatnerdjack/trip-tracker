@@ -22,7 +22,7 @@ export default class TripView extends Component {
     }
 
     UNSAFE_componentWillMount() {
-        axios.get("http://localhost:5000/api/trips/" + this.props.location.pathname.replace("/trip/", ""))
+        axios.get("/api/trips/" + this.props.location.pathname.replace("/trip/", ""))
         .then((res) => {
             this.setState({
                 trip: res.data,

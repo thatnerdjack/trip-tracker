@@ -14,7 +14,7 @@ class Dashboard extends Component {
 
     UNSAFE_componentWillMount() {
         console.log("we're getting shit", this.props.userID)
-        axios.get("http://localhost:5000/api/trips/user/" + this.props.userID)
+        axios.get("/api/trips/user/" + this.props.userID)
         .then((res) => {
             this.setState({
                 cards: res.data
